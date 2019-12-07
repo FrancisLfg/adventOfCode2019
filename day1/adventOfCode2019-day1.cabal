@@ -15,8 +15,6 @@ author:         Francis Laforge
 maintainer:     francis@flaforge.fr
 license:        BSD3
 build-type:     Simple
-extra-source-files:
-    README.md
 
 source-repository head
   type: git
