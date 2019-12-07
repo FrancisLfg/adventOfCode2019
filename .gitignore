@@ -2,3 +2,5 @@
 adventOfCode2019.cabal
 *~
 .idea
+**/*.iml
+dist/
