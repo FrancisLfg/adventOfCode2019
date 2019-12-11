@@ -1,0 +1,62 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 8cdbf3c7b21d08c6eee78a91c3dd2eba96c478f4501a816438a82bb380e8c4e1
+
+name:           adventOfCode2019-day3
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/FrancisLfg/adventOfCode2019/day3#readme>
+homepage:       https://github.com/FrancisLfg/adventOfCode2019#readme
+bug-reports:    https://github.com/FrancisLfg/adventOfCode2019/issues
+author:         Francis Laforge
+maintainer:     francis@flaforge.fr
+license:        BSD3
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/FrancisLfg/adventOfCode2019/day3
+
+library
+  exposed-modules:
+      Day3
+  other-modules:
+      Paths_adventOfCode2019_day3
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+      , containers
+      , split
+  default-language: Haskell2010
+
+executable adventOfCode2019-day3-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_adventOfCode2019_day3
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      adventOfCode2019-day3
+    , base >=4.7 && <5
+    , containers
+    , split
+  default-language: Haskell2010
+
+test-suite adventOfCode2019-day3-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_adventOfCode2019_day3
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      adventOfCode2019-day3
+    , base >=4.7 && <5
+    , HUnit
+  default-language: Haskell2010
